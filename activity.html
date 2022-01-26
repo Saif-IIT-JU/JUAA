@@ -1,0 +1,389 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>Activity</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css">
+<style>
+.body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  background: linear-gradient(#3a6268, #34495e, #fff, #fff 100%);
+}
+a{
+  text-decoration: none;
+}
+.social {
+  column-count: 3;
+  column-width: 100px;
+  padding: 40px;
+}
+.news{
+  
+  width: 1100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+.news .news1{
+position: relative;
+width: 320px;
+height: 180px;
+margin: 15px;
+padding-top: 13px;
+padding-left: 4px;
+background: #fff;
+padding:100px, 40px,60px;
+box-shadow: 0 15px 45px rgba(0,0,0.1);
+}
+.news .news1:before{
+  content: "";
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:  #34495e;
+  transform: scaleY(0);
+  transform-origin:top;
+  transition: transform 0.5s; 
+}
+.news .news1:hover:before{
+  transform:scaleY(1);
+  transform-origin: bottom;
+  transition: transform 0.5s;
+}
+.news .news1 h2{
+  position:absolute;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+
+}
+.news .news1 a{
+  margin: 12
+}
+
+.wrapper1{
+  width:1200px;
+  margin:100px auto;
+  padding-top:
+  padding-bottom: 10px;
+}
+.title2{
+  text-align:center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+}
+.title2 h2{
+  text-transform: capitalize;
+  font-size:36px;
+  position:relative;
+  display: inline-block;
+  padding-bottom: 5px;
+  font-style: inherit;
+  color:#035E0E;
+}
+.title2 h2:before{
+  position: absolute;
+  content:"";
+  width: 150px;
+  height: 2px;
+  background-color: #389925;
+  bottom:0;
+  left:50%;
+  transform: translateX(-50%);
+
+}
+.menu1{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.single-manu1{
+  flex-basis: 580px;
+  margin-bottom: 40px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #ddd;
+}
+.single-menu1:nth-child(5), .single-menu1:nth-child(6){
+  border-bottom: 0;
+}
+.single-menu1{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+single-menu1:hover img{
+  border-radius: 0;
+} 
+.single-menu1 img {
+  max-width:340px;
+  margin-right: 30px;
+  padding: 20px;
+ 
+
+}
+.single-menu1 h3{
+  text-transform:capitalize;
+  font-size: 22px;
+  border-bottom: 1px dashed #333;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  color: #035E0E;
+
+}
+.menu-content1 p{
+  font-size:19px;
+  font-style:inherit;
+}
+.menu-content1 a{
+  font-size:15px;
+  font-style:inherit;
+  color: black;
+
+}
+.objective p{
+	padding-left: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-gap: 1px;
+  background-color: gray;
+  padding: 1px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+}
+.item1 {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+}
+
+.item2 {
+  grid-column: 1;
+  grid-row: 1/ span 2;
+}
+
+.item5 {
+  grid-column: 1 / span 1;
+  grid-row: 1;
+}
+</style>
+</head>
+<body>
+
+<div class="topnav">
+
+
+  <a  href="index.html">Home</a>
+<div class="dropdown">
+    <button class="dropbtn">  <a href="#">About Us</a>
+
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="about1.html">Our Mission</a>
+      <a href="committee.html">Committee</a>
+    </div>
+  </div> 
+
+  <a class="active" href="activity.html">Activities</a>
+  <a href="involve.php">Get Involved</a>
+  <div class="dropdown">
+    <button class="dropbtn">  <a  href="#">Membership</a>
+
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="registration.php">Registration</a>
+      <a href="temp1.php">Account Login</a>
+    </div>
+  </div> 
+ 
+     <a href="gallery.php">Gallery</a>
+  <a href="donate.php">Sponsors and Donors</a>
+  <a href="News.php">News/Notice</a>
+  <a href="contact.php">Contact Us</a>
+    <a href="https://juniv.edu/" target="_blank">JU</a>
+
+</div>
+
+<div class="body">
+  <div class=" news">
+  <div class="news1">
+    <h2 > News</h2><br><br>
+     <a style="font-size: 16px;  color:black;" href="Event.html">Prof.H.C Rahman Momorial lecture</a><br>
+  
+       <a style="font-size: 16px;  color:black;" href="Event.html">Barsha Baran Utsav on 25-O4-19</a><br>
+
+       <a style="font-size: 16px;  color:black;" href="Event.html">Curtain Raiser Programme Centenary Celebration</a>
+    
+  </div>
+  <div class="news1">
+    <h2>Notice & Circular</h2><br><br>
+
+     <a style="font-size: 16px; color:black;" href="Event.html">Monthly News</a>
+    <a style="font-size: 16px;  color:black;" href="Event.html">News Bulletin August 2020</a>
+    <a style="font-size: 16px;  color:black;" href="Event.html">APPLICATION OF AL & MACHINE LEARNING IN DATA SCIENCE</a>
+    <a style="font-size: 16px;  color:black; " href="Event.html">Newly Elected EC Members-ELection</a>
+  
+  </div>
+  <div class="news1">
+    <h2>Event</h2><br><br>
+  
+    <a style="font-size: 16px; color:black;" href="Event.html">Newly Elected EC Members-ELection</a>
+
+    <a style="font-size: 16px; color:black;" href="Event.html">News Bulletin August 2020</a>
+   
+    <a style="font-size: 16px; color: black;" href="Event.html">Barsha Baran Utsav on 25-O4-19</a>
+   
+    <a style="font-size: 16px; color: black;" href="Event.html">Newly Elected EC Members-ELection</a>
+    
+  </div>
+  
+</div>
+
+</div>
+ <!--............ our activity news........... -->
+
+<div class="wrapper1">
+  <div class="title2">
+    <h2>Our Activity News</h2>
+  </div>
+
+  <div class="menu1">
+    <div class="single-menu1">
+      <img src="pic/publication.jpg"style="width:340px;height:210px;">
+
+      <div class="menu-content1">
+        <h3>Publication</h3><br><br><br>
+            <p>News bulletin is being published yearly. It carries special sections on Headquarter News. University News, Forthcoming Events, Branch News etc.</p>
+            <a href="Event.html">More Details</a>
+  
+      </div>
+
+      
+    </div>
+    <div class="single-menu1">
+      <img src="pic/facility.jpg" style="width:340px;height:210px;">
+      <div class="menu-content1">
+        <h3>Facilities</h3><br><br><br>
+            <p>2 Nos. of Seminar Rooms suitable for 30 persons are now available for meeting /seminar/ discussion etc. Please contact office for booking.</p>
+            <a href="Event.html">More Details</a>
+  
+      </div>
+
+      
+    </div>
+    <div class="single-menu1">
+      <img src="pic/images.jpg" style="width:300px;height:210px;">
+      <div class="menu-content1">
+        <h3>Services</h3><br><br><br>
+            <p>For the pre-final & final year students, training programs are being organised for improving communication skill, performance in Group Discussion & Interviews.</p>
+            <a href="Event.html">More Details</a>
+  
+      </div>
+
+      
+    </div>
+    <div class="single-menu1">
+      <img src="pic/donation.jpg" style="width:340px;height:210px;">
+      <div class="menu-content1">
+        <h3>Donation</h3><br><br><br>
+            <p>Donations by A/c payee cheques or drafts may please be sent to the Alumni Association with a covering letter describing the purpose. The various purposes are listed below</p>
+            <a href="Event.html">More Details</a>
+  
+      </div>
+
+      
+    </div>
+    <div class="single-menu1">
+      <img src="pic/membership.jpg"style="width:340px;height:210px;">
+      <div class="menu-content1">
+        <h3>Archives Goal</h3><br><br><br>
+            <p>Documents of Association - Documents of Association / Regulation / By Laws / Founding Committee / Past President and Secretary Since 1995yr etc.
+            </p>
+            <a href="Event.html">More Details</a>
+  
+      </div>
+
+      
+    </div>
+    <div class="single-menu1">
+      <img src="pic/images (1).jpg"style="width:300px;height:210px;">
+      <div class="menu-content1">
+        <h3>Membership</h3><br><br><br>
+            <p>
+All ex-students of National Council of Education, Bengal and Jahangirnagar University - Arts, Science, Engineering & Interdisciplinary are eligible to be a Member of the Alumni Association, N.C.E. Bengal & Jahangirnagar University.
+</p>
+<a href="Event.html">More Details</a>
+  
+      </div>
+
+      
+    </div>
+    
+  </div>
+  
+</div>
+<hr>
+ <!--............ news and event........... -->
+
+<h1 style="text-align: center;">Social Responsibility of Jahangirnagar University Alumni Association</h1>     
+
+ <div class="social">
+
+     <p style="font-size:18px" style="color: red" style="padding: 20px">Official Alumni Association of Jahangirnagar University
+জাবি এ্যালোমনাই এসোসিয়েশন একটি নিজস্ব ওয়েভ সাইট পরিচালনা করে আসছে।
+
+www.jualumni-bd.org এখানে এ পর্যন্ত যারা জীবন সদস্য হয়েছে তাদের সবার প্রয়োজনীয় তথ্য দেওয়া আছে।<br>
+
+তা ছাড়া ফেসবুকে একটি পেজ Jahangirnagar University Alumni Association - JUAA আছে এবং একটি গ্রুপ আছে JAHANGIRNAGAR UNIVERSITY ALUMNI ASSOCIATION (JUAA)
+
+কিন্তু এটা সত্য যে দ্বয়িত্বে প্রাপ্তরা বিভিন্ন প্রতিষ্ঠানর গুরুত্ব পূর্ণ পোষ্টে নিয়োজিত থাকায় ইচ্ছা থাকা সত্বেও উনাদের পক্ষে প্রয়োজনীয় সময় বেড় করা সম্ভব হয়ে উঠে না।<br>
+
+তবে আমরা আসা করছি আগামী ১৩ জানুয়ারী শুক্র বার ২০১৭ প্রাক্তন জাবিয়ানদের পুনর্মিলনী ও মিলন মেলার পূর্বেই গনতান্ত্রিক প্রকৃয়ায় JUAA এর একটি পূর্নাঙ্গ কার্যকরী পরিষদ উপহার পাব যার প্রতিশ্রুতি সর্ম্পকে ইতিমধ্যে সবাই অবগত আছি।
+
+<br><br><br>
+
+ </p>
+
+  
+
+<h2  style="font-size:18px" style="color: red"> লেখা আহবান</h2>
+    <img src="pic/juafrm.jpg" class="barpic" style=" width:400px; height:320px;"><br><br><br><div class="search-container" style="text-align: left">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit">Submit</button>
+    </form>
+  </div><br><br><br>
+<img src="pic/jualmnp.jpg" style=" width:320px;height:320px;">  </div>
+
+ 
+</div>
+ 
+</section>
+
+</body>
+
+<footer>
+<div class="address">
+  <h3>Jahangirnagar University Alumni Association</h3>
+  <address>Register Building,Room No #131<br>Jahangirnagar University,Savar,Dhaka
+       </address><br>
+  <p>Contact Numbers:<br>(01876783515-520)</p>
+<p >Gmail:alumni@juniv.edu</p> 
+<p class="copyright " style="color: white" align="right" style="font-size: 2px">&copy;Copyright JUAA.2020:All rights reserved</p>
+
+</footer>
+</html>
